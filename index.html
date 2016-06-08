@@ -1,0 +1,33 @@
+<html>
+<head>
+  <meta charset="utf8">
+  <!--for bootstrap. Angular va utiliser jquery par défaut si présent également -->
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <!-- angular -->
+  <script src="bower_components/angular/angular.js"></script>
+
+  <!-- module contribs -->
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+  <!-- module custom TVA -->
+
+  <!-- module custom app, notre "chef d'orchestre" et celui qui est appelé par ng-app ! -->
+  <script src="app.js"></script>
+
+</head>
+<body ng-app="app">
+
+ <!-- Fixed navbar from bootstrap -->
+
+
+<div class="container">
+
+  <!-- Les states de ui.router seront insérés ici -->
+  <div ui-view></div>
+
+</div>
+
+</body>
+</html>
